@@ -10,10 +10,19 @@ int main(){
     //a to z= 97 to 122
     //A to Z = 65 to 90
     int ascii=(int)ch; 
-    if(ascii>=97 && ascii<=122){
+    /*if(ascii>=97 && ascii<=122){
         cout<<"It is a lower case alphabet"<<endl;
+    }*/
+    if((ascii>=65 && ascii<=90)||(ascii>=97 && ascii<=122)){
+        if((ch=='a') || (ch=='e') || (ch=='i') || (ch=='o') || (ch=='u')){
+            cout<<"It is a vowel"<<endl;
+        }
+        else{
+            cout<<"It is a consonant"<<endl;
+        }
+        //cout<<"It is an upper case alphabet"<<endl;
     }
-    if(ascii>=65 && ascii<=90){
-        cout<<"It is an upper case alphabet"<<endl;
+    else{
+        cout<<"Not a character"<<endl;
     }
 }
